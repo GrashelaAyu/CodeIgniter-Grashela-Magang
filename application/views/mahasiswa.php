@@ -15,7 +15,6 @@
       <td>TGL LAHIR</td>
       <td>ALAMAT</td>
       <td>AGAMA</td>
-      <td>TELEPON</td>
       <td colspan="2"> AKSI</td>
 
 
@@ -27,7 +26,6 @@
               <td><?php echo $mhs->TglLahir?></td>
               <td><?php echo $mhs->Alamat?></td>
               <td><?php echo $mhs->Agama?></td>
-              <td><?php echo $mhs->Telepon?></td>
               <td width="20px"><?php echo anchor('mahasiswa/edit_data/'.$mhs->Nama,'<div class="btn btn-primary"><i class="fas fa-edit"></div>');?></td>
               <td width="20px"><?php echo anchor('mahasiswa/hapus_data/'.$mhs->Nama,'<div class="btn btn-danger"><i class="fas fa-trash"></div>');?></td>
             </tr>
@@ -68,14 +66,6 @@
       <div class="form-group">
         <label>AGAMA</label>
         <input type="text" name="Agama" placeholder="Masukan Agama Anda" class="form-control">
-      </div>
-
-      <div class="form-group">
-        <label>TELEPON</label>
-        <input type="text" name="Telepon" placeholder="Masukan Telepon Anda" class="form-control">
-      </div>
-
-           
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
